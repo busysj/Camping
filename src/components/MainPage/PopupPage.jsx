@@ -1,9 +1,14 @@
 import React from "react";
+import styled from "styled-components";
+import { Modal, Button } from "antd";
 
 const PopupPage = () => {
   return (
     <div>
-      <h1>팝업</h1>
+      <Button type="primary">버튼</Button>
+      <Modal title="제목">
+        <p>내용</p>
+      </Modal>
     </div>
   );
 };
