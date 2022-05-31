@@ -6,16 +6,16 @@ import SearchPage from "./MainPage/SearchPage";
 import YoutubePage from "./MainPage/YoutubePage";
 
 const MainPage = () => {
-  return (
-    <div>
-      <h1>Main Page</h1>
-      <PopupPage />
-      <SearchPage  />
-      <RecommendPage />
-      <ReviewPage />
-      <YoutubePage />
-    </div>
-  );
+    return (
+        <div>
+            <h1>Main Page</h1>
+            <PopupPage />
+            <SearchPage />
+            <RecommendPage />
+            <ReviewPage />
+            <YoutubePage />
+        </div>
+    );
 };
 
 export default MainPage;

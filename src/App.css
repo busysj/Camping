@@ -1,9 +1,18 @@
 :root {
-  --main-bg-color: rgb(255, 198, 64);
+  --main-color-black : #1e1e07;
+  --main-color-green : #0e5f12;
+  --main-color-orange : #ff8807;
+  --main-color-orange-light : rgb(255, 198, 64);
+  --main-color-yellow : #ffe923;
+  --main-color-yellow-light : #fffbab;
+}
+
+body {
+  margin: 0 3%;
 }
 
 h1 {
-  background-color: var(--main-bg-color);  
+  background-color: var(--main-color-orange);  
 }
 
 .search__backgroundimg {
@@ -18,39 +27,66 @@ h1 {
   width: 100%;
   height: 500px;
   content: "";
-  background-image: url(../src/img/메인배경화면.jpg);
+  background-image: url(../src/assets/메인배경화면.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
-  filter: brightness(70%);
+  z-index: -10;
+  filter: brightness(60%);
 }
 
 .search__input {
-  margin-top: 240px;
-}
-.search__input input {
-  width: 350px;
-  height: 25px;
-  border: none;
-  padding: 10px;
-  border-radius: 20px;
-  font-size: 20px;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right:auto;
 }
 
+.search__input span {
+  width: 470px;
+  height: 45px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
+  border-radius: 15px;
+}
+.search__input span:hover {
+  width: 470px;
+  height: 45px;
+  box-shadow: rgba(255, 255, 255, 1) 0px 0px 30px;
+  border-radius: 15px;
+}
+
+.search__input input {
+  width: 400px;
+  height: 31px;
+  border: none;
+  line-height: 44px;
+  padding: 13px 0 0 10px;
+  border-radius: 20px 0 0 20px;
+  font-size: 20px;
+  z-index: -5;
+  outline: none;
+}
 
 .search__input button {
   border: none;
-  background-color: rgba(127, 156, 159, 0.5);
+  background-color: var(--main-color-orange);
   color : white;
   font-size:larger;
   padding: 5px;
-  margin-left: 10px;
   width: 60px;
-  border-radius: 20px;
+  border-radius: 0 20px 20px 0;
+  
+}
+.search__input button:hover {
+  color: var(--main-color-black);
+}
+
+
+.btn_icon{
+  margin-top: 5px;
+  font-size: large;
 }
 
 .search__filter {
@@ -62,8 +98,23 @@ h1 {
   justify-content: space-around;
 }
 .search__filter li {
-  padding: 5px;
+  padding: 7px;
   border-radius: 20px;
-  background-color: rgba(127, 156, 159, 0.5);
-  
+  background-color: rgba(127, 156, 159, 0.3);
+  font-weight: bold;
+}
+
+.search__filter li:hover {
+  background-color: var(--main-color-orange-light);  
+  color: var(--main-color-black);
+  font-weight: 600;
+  box-shadow: rgb(61, 61, 61) 0px 0px 8px;
+}
+
+
+
+
+
+.footer__img {
+  float: left;
 }
