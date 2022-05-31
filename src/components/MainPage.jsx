@@ -10,7 +10,7 @@ const MainPage = () => {
     <div>
       <h1>Main Page</h1>
       <PopupPage />
-      <SearchPage />
+      <SearchPage  />
       <RecommendPage />
       <ReviewPage />
       <YoutubePage />
