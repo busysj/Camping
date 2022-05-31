@@ -41,7 +41,7 @@ const NavItem = styled.li`
 `;
 
 const NavButton = styled.button`
-  background: #ff4800;
+  background: var(--main-color-orange);
   display: flex;
   align-items: center;
   font-size: 15px;
@@ -54,7 +54,7 @@ const NavButton = styled.button`
   font-weight: 500;
 
   &:hover {
-    background: #e84200;
+    background: var(--main-color-orange-light);
   }
 `;
 
@@ -68,8 +68,8 @@ const NavLink = styled.div`
   font-weight: 500;
 
   &:hover {
-    color: #ff4800;
-    border-bottom: 2px solid #ff4800;
+    color: var(--main-color-orange);
+    border-bottom: 2px solid var(--main-color-orange);
   }
 `;
 
@@ -77,10 +77,7 @@ const NavbarPage = () => {
   return (
     <Nav>
       <NavLogo to="/">
-        <img
-          src="https://us.123rf.com/450wm/viktorijareut/viktorijareut1505/viktorijareut150500811/40216239--텐트-캠핑-장비-캠핑은-텐트-흰색으로-격리-야영.jpg"
-          alt="logo"
-        />
+        <img src="./assets/Logo.png" alt="logo" />
         CAMP
       </NavLogo>
 
