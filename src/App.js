@@ -12,7 +12,7 @@ function App() {
       <NavbarPage />
       <Routes>
         <Route path="/" element={<MainPage />}></Route>
-        {/* <Route path="/map" element={<MapPage />}></Route> */}
+        <Route path="/map" element={<MapPage />}></Route>
       </Routes>
       <FooterPage />
     </div>
