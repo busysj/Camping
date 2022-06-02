@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import Logo from "../assets/Logo.png";
+import { Link } from "react-router-dom";
 
 const Nav = styled.div`
   background: #fff;
@@ -24,7 +26,7 @@ const NavLogo = styled.div`
 
   img {
     width: 80px;
-    height: 80px;
+    height: 60px;
     margin-left: 80px;
   }
 `;
@@ -58,7 +60,7 @@ const NavButton = styled.button`
   }
 `;
 
-const NavLink = styled.div`
+const NavLink = styled(Link)`
   display: flex;
   padding: 0 15px;
   font-size: 15px;
@@ -66,6 +68,7 @@ const NavLink = styled.div`
   cursor: pointer;
   height: 80px;
   font-weight: 500;
+  text-decoration: none;
 
   &:hover {
     color: var(--main-color-orange);
@@ -77,13 +80,13 @@ const NavbarPage = () => {
   return (
     <Nav>
       <NavLogo to="/">
-        <img src="./assets/Logo.png" alt="logo" />
-        CAMP
+        <img src={Logo} alt="logo" />
+        Camp
       </NavLogo>
 
       <NavMenu>
         <NavItem>
-          <NavLink to="/">지도</NavLink>
+          <NavLink to="/map">지도</NavLink>
         </NavItem>
         <NavItem>
           <NavLink to="/">커뮤니티</NavLink>
